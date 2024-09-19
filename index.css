@@ -1,0 +1,734 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(webpage.png);
+    background-size: cover;
+}
+.navbar{
+    height: 55px;
+    width: auto;
+    background-color: rgba(218, 216, 216, 0.589);
+    backdrop-filter: blur(10px);
+    display: flex;
+    position: static;
+    transition: 0.5s;
+}
+.navbar.active{
+    background-color: black;
+    color: white;
+    /* animation: 0.5s; */
+}
+.navbar.active a{
+    filter: drop-shadow(0px 10px 10px aqua);
+}
+.patli{
+    height: 3px;
+    width: 1200px;
+    background-color: black;
+}
+.anim{
+    height: 1px;
+    width: 100px;
+    background-color: red;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    100%{
+        margin-left: 1250px;
+    }
+}
+.box{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.box.box1{
+    font-size: 30px;
+    margin-left: 30px;
+}
+.box.box2{
+    margin-left: 30px;
+}
+.logo{
+    height: 60px;
+    width: 50px;
+    background-image: url(r\ kompiler.png);
+    background-size: cover;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 10px black);
+}
+.namelogo{
+    font-size: 30px;
+    margin: 10px;
+}
+.courses{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    margin-left: 60px;
+}
+.courses:hover{
+    color: aqua;
+}
+.problems{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    margin-left: 70px;
+}
+.problems:hover{
+    color: aqua;
+}
+.input1{
+    height: 30px;
+    width: 280px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 50px;
+    padding-left: 20px;
+    background-color: rgba(218, 216, 216, 0.589);
+    border: 1px solid white;
+    color: black;
+    font-size: 15px;
+}
+.input1.active{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 280px;
+    
+}
+.darkmode{
+   font-size: 20px;
+   margin-top: 15px;
+   color: white;
+}
+.darkon{
+    height: 22px;
+    width: 60px;
+    background-color: rgba(218, 216, 216, 0.589);
+    margin: 17px;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.result-item a {
+    text-decoration: none;
+    color: #337fd1;
+}
+#results{
+    color: white;
+    margin-left: 600px;
+    font-size: 20px;
+    /* background-color: black;  */
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.results.active{
+    color: white;
+    margin-left: 700px;
+    font-size: 20px;
+   background-color: white  ;
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.darkon.active{
+    background-color: black;
+}
+.darkon.active div{
+    margin-left: 38px;
+    transition: 0.5s;
+    background-color: white;
+    filter: drop-shadow(0px 0px 5px aqua);
+}
+.main.active div{
+    background-color: rgba(0, 0, 0, 0.372);
+    transition: 0.5s;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+#icon{
+    font-size: 25px;
+    margin: 10px;
+    margin-left: 140px;
+    border-radius: 50%;
+    color: white;
+}
+.LOGIN{
+    font-size: 20px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+}
+.LOGIN:hover{
+    color: aqua;
+}
+.main{
+    height: 625px;
+    width: auto;
+    overflow: scroll;
+    /* scrollbar-width: none; */
+    transition: 0.5s;
+}
+.cards{
+    height: 2500px;
+    width: auto;
+    background-color:  rgba(218, 216, 216, 0.589);
+    margin-top: 500px;
+}
+.container{
+    margin: 60px;
+    padding-top: 40px;
+    transition: 0.5s;
+    display: flex;
+    position: static;
+}
+.container.active{
+    color: white;
+}
+
+.text-container{
+    font-size: 60px;
+    height: 400px;
+    width: 600px;
+    margin-top: 100px;
+}
+.text-container.active{
+    color: white;
+}
+.vscode{
+    background-image: url(compiler.png);
+    background-size: cover;
+    height: 350px;
+    width: 600px;
+    margin: 50px;
+    filter: drop-shadow(0px 0px 10px black);
+    border-radius: 10px;
+}
+.vscode.active{
+    filter: drop-shadow(0px 0px 2px white);
+}
+.problemsolve{
+    font-size: 40px;    
+    margin-left: 50px;
+    margin: 40px;
+    transition: 0.5s;
+    text-decoration: wavy;
+}
+.rk{
+    background-color: rgb(71, 68, 68);
+    width: 1250px;
+    margin-left: 50px;
+    border-radius: 30px;
+    display: flex;
+    position: static;
+    filter: drop-shadow(0px 0px 10px white);
+}
+.problemsolve.active{
+    color: white;
+}
+.pqd{
+    height: 625px;
+    width: auto;
+    background-color: rgba(255, 0, 0, 0.311);
+    display: flex;
+    position: static;
+}
+.got{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.pqd1{
+    height: 625px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.377);
+    overflow-y: scroll;
+}
+.pqd2{
+    height: 625px;
+    width: 1060px;
+    background-color: rgba(0, 0, 0, 0.763);
+    overflow-y: scroll;
+    color: white;
+
+}
+#fi{
+    font-size: 30px;
+    padding: 10px;
+}
+.typesq{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    padding: 10px;
+}
+.typesq:hover{
+    color: rgb(59, 157, 181);
+}
+.aboutq{
+    font-size: 60px;
+    padding: 200px;
+    color: rgb(235, 192, 61);
+    text-align: center;
+    margin: auto;
+    font-weight: 40px;
+}
+.aboutq:hover{
+    border: 2px solid white;
+}
+.get{
+    background-color: rgb(45, 23, 23);
+    height: 60px;
+    width: 170px;
+    align-items: center;
+    margin: auto;
+    margin-left: 600px;
+    margin-top: 100px;
+    border-radius: 30px;
+    font-size: large;
+    color: white;
+    animation: animateget 2s linear infinite;
+    border: 1px solid white;
+}
+.rkompiler{
+    height: 300px;
+    width: 300px;
+    background-image: url(r\ kompiler.png);
+    background-size: cover;
+    margin-left: 300px;
+}
+@keyframes animateget {
+    25%{
+        filter: drop-shadow(0px 0px 10px white);
+        height: 62px;
+        width: 172px;
+    }
+    50%{
+        filter: drop-shadow(0px 0px 10px rgb(219, 124, 92));
+        height: 63px;
+        width: 173px;
+    }
+    75%{
+        filter: drop-shadow(0px 0px 10px rgb(33, 42, 126));
+        height: 64px;
+        width: 174px;
+    }
+    100%{
+        filter: drop-shadow(0px 0px 10px rgb(136, 40, 165));
+        height: 64px;
+        width: 174px;
+    }
+}
+.probkaloc{
+    height: 40px;
+    width: 300px;
+    background-color: rgb(24, 22, 22);
+  
+    color: white;
+    font-size: 20px;
+
+}
+.containers {
+    perspective: 1000px; /* Gives a perspective effect */
+    background-color: red;
+}
+
+.rotating-rs {
+    font-size: 200px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    height: 300px;
+    width: 10px;
+    margin-left: 650px;
+    text-align: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    animation: rotate 5s linear infinite;
+}
+.rund{
+    height: 40px;
+    width: auto;
+    background-color: rgba(144, 50, 40, 0.256);
+    transition: 0.5s;
+    overflow-y: scroll;
+    scrollbar-width: none ;
+    
+    
+}
+.editor-container{
+    width: 1000px;
+    height: 440px;
+    margin: 20px auto;
+    position: relative;
+    border: 5px solid black;
+    
+}
+#editor{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+      
+}
+.box.box9{
+    font-size: 25px;
+}
+.box.box10{
+    font-size: 25px;
+}
+.box.box11{
+    font-size: 25px;
+}
+.rund.active{
+    height: 450px;
+    overflow-y: scroll;
+    transition: 0.5s;
+}
+.trigno{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-left: 100px;
+    background-color: rgb(181, 173, 116);
+    border: 2px solid rgb(51, 75, 123);
+    cursor: pointer;
+}
+.trignos{
+    height: 35px;
+    width: 105px;
+    border-radius: 10px;
+    margin: 5px;
+    margin-left: 250px;
+    font-size: 18px;
+    background-color: rgb(152, 181, 88);
+    border: 2px solid rgb(66, 97, 197);
+    cursor: pointer;
+}
+.contentlecture2{
+    height: 450px;
+    width: auto;
+    background-color:  rgba(161, 140, 140, 0.224);
+    margin: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: 2px solid white;
+    display: flex;
+    position: static;
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(0px 0px 10px black);
+}
+.somelecture{
+    font-size: 50px;
+    margin: 50px;
+    height: 60px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+}
+.maincontent{
+    border-radius: 20px;
+    height: 360px;
+    margin: 10px;
+    width: 1200px;
+    background-color:  rgba(242, 237, 237, 0.354);
+    overflow-x: scroll;
+    padding: 30px;  
+    display: flex;
+    backdrop-filter: blur(10px);
+    position: static;
+    
+}
+.contphoto{
+    height: 400px;
+    width: 300px;
+    background-color: rgba(178, 165, 165, 0.406);
+    margin: 20px;
+    border-radius: 20px;
+    /* border: 2px solid white; */
+    filter: drop-shadow(0px 0px 10px white);
+}
+.contentphoto{
+    height: 150px;
+    width: 270px;
+    margin: 12px;
+    border-radius: 10px;
+}
+.conttopic{
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 20px;
+    color: white;
+}
+.durdiv{
+    display: flex;
+    flex-direction: column;
+}
+.duration{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.getcourse{
+    height: 20px;
+    width: 100px;
+    background-color: rgba(155, 128, 128, 0.484);
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border: 1px solid white;
+}
+.loginpage{
+    height: 550px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    background-color: rgba(43, 41, 41, 0.471);
+}
+.firstinputlogin{
+    height: 50px;
+    width: 720px;
+    background-color: rgba(205, 200, 200, 0.434);
+    margin: 30px;
+    margin-left: 130px;
+    border-radius: 25px;
+    color: rgb(213, 200, 200);
+    font-size: 18px;
+    padding-left: 40px;
+    border: 1px solid white;
+}
+.rklogin{
+    
+    height: 100px;
+    margin-left: 450px;
+}
+.logbutton{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: rgba(245, 222, 179, 0.477);
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 440px;
+    cursor: pointer;
+}
+.sinbutton{
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: rgba(245, 222, 179, 0.477);
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 400px;
+}
+.rkquestions{
+    height: 50px;
+    width: 50px;
+}
+.quesiontopic{
+    margin: 10px;
+    margin-left: 30px;
+    font-size: 35px;
+}
+.question-theory{
+    height: 150px;
+    width: 700px;
+    margin: 30px;
+}
+.testcase3{
+    height: 600px;
+    width: 700px;
+    /* background-color: red; */
+    margin-left: 30px;
+}
+.restcase1-3{
+    height: 150px;
+    width: 700px;
+    color: white;
+}
+.inputcase{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.outputcase{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.inputcase2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.outputcase2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.inputcase3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.outputcase3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.coursesdiv1{
+    height: 620px;
+    width: 1365px;
+    overflow-y: scroll;
+    background-color: rgba(51, 50, 50, 0.325);
+    backdrop-filter: blur(10px);
+}
+.content-of-course{
+    height: 370px;
+    width: 1300px;
+    margin-left: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    /* overflow-x: scroll;
+    scrollbar-width: none; */
+    background-color: rgba(0, 0, 0, 0.488);
+    /* box-shadow: 0px 0px 10px white; */
+}
+.yourcourses{
+    color: white;
+    margin: 10px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+.your-course-course{
+    height: 320px;
+    width: 1200px;
+    margin-top: 10px;
+    margin-left: 40px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    /* background-color: red; */
+    display: flex;
+    position: static;
+}
+.your-course-course1{
+    height: 250px;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    background-image: url(full\ stack\ developer.png);
+    background-size: cover;
+}
+.bluritnow{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.245);
+    border-radius: 20px;
+}
+.bluritnow:hover{
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0);
+}
+.continue{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    margin-top: 200px;
+    cursor: pointer;
+    margin-left: 300px;
+}
+.informationuser{
+    height: 550px;
+    margin-left: 70px;
+    margin-top: 30px;
+    width: 1200px;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    background-color: rgba(65, 59, 59, 0.297);
+}
+.useraccount{
+    height: 500px;
+    width: 400px;
+    margin: 40px;
+    /* margin-top: 50px; */
+    /* background-color: red; */
+    padding: 10px;
+}
+.photo-area{
+    height: 200px;
+    width: 400px;
+    /* background-color: yellow; */
+    display: flex;
+    position: static;
+}
+.photo-areakabutton{
+    height: 100%;
+    width: 180px;
+    /* background-color: black; */
+}
+.usernameka-accountname{
+    height: 100%;
+    width: 100%;
+    /* background-color: violet; */
+}
+.user-photo{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* margin-left: 20px; */
+    /* background-color: green; */
+    background-image: url(RS\ Tech-logos.jpeg);
+    background-size: cover;
+}
+.selectphoto{
+    height: 30px;
+    width: 70px;
+    margin-left: 40px;
+    border-radius: 10px;
+    background-color: rgba(16, 16, 17, 0.358);
+    color: white;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
